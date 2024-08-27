@@ -24,7 +24,15 @@ Console.WriteLine("Hello, World!");
 
 
 #region Search
-int[] unsortSorted = [3,200,2,68,15,44,23,89,3];
-SelectionSort sorting = new SelectionSort();
+#region Selection Sort
+//int[] unsortSorted = [3,200,2,68,15,44,23,89,3];
+//SelectionSort sorting = new SelectionSort();
+//Print.WriteList(sorting.Sort(unsortSorted));
+#endregion
+
+#region Insertion Sort
+int[] unsortSorted = [3, 200, 2, 68, 15, 44, 23, 89, 3];
+InsertionSorting sorting = new InsertionSorting();
 Print.WriteList(sorting.Sort(unsortSorted));
+#endregion
 #endregion
