@@ -31,8 +31,20 @@ Console.WriteLine("Hello, World!");
 #endregion
 
 #region Insertion Sort
+//int[] unsortSorted = [3, 200, 2, 68, 15, 44, 23, 89, 3];
+//InsertionSorting sorting = new InsertionSorting();
+//Print.WriteList(sorting.Sort(unsortSorted));
+#endregion
+
+//#region Bubble Sort
+//int[] unsortSorted = [3, 200, 2, 68, 15, 44, 23, 89, 3];
+//BubbleSorting sorting = new BubbleSorting();
+//Print.WriteList(sorting.Sort(unsortSorted));
+//#endregion
+
+#region Shell Sort
 int[] unsortSorted = [3, 200, 2, 68, 15, 44, 23, 89, 3];
-InsertionSorting sorting = new InsertionSorting();
-Print.WriteList(sorting.Sort(unsortSorted));
+ShellSorting sorting = new ShellSorting();
+Print.WriteList(sorting.Sort(unsortSorted, unsortSorted.Length));
 #endregion
 #endregion
