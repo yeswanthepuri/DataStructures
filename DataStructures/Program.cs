@@ -23,7 +23,7 @@ Console.WriteLine("Hello, World!");
 #endregion
 
 
-#region Search
+#region Sort
 #region Selection Sort
 //int[] unsortSorted = [3,200,2,68,15,44,23,89,3];
 //SelectionSort sorting = new SelectionSort();
@@ -36,15 +36,24 @@ Console.WriteLine("Hello, World!");
 //Print.WriteList(sorting.Sort(unsortSorted));
 #endregion
 
-//#region Bubble Sort
+#region Bubble Sort
 //int[] unsortSorted = [3, 200, 2, 68, 15, 44, 23, 89, 3];
 //BubbleSorting sorting = new BubbleSorting();
 //Print.WriteList(sorting.Sort(unsortSorted));
-//#endregion
+#endregion
+
+
 
 #region Shell Sort
+//int[] unsortSorted = [3, 200, 2, 68, 15, 44, 23, 89, 3];
+//ShellSorting sorting = new ShellSorting();
+//Print.WriteList(sorting.Sort(unsortSorted, unsortSorted.Length));
+#endregion
+
+#region Merge Sort
 int[] unsortSorted = [3, 200, 2, 68, 15, 44, 23, 89, 3];
-ShellSorting sorting = new ShellSorting();
-Print.WriteList(sorting.Sort(unsortSorted, unsortSorted.Length));
+MergeSort sort = new MergeSort();
+sort.MergeSortRecursive(unsortSorted, 0, unsortSorted.Length-1);
+Print.WriteList(unsortSorted);
 #endregion
 #endregion
