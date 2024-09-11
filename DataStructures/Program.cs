@@ -51,9 +51,15 @@ Console.WriteLine("Hello, World!");
 #endregion
 
 #region Merge Sort
+//int[] unsortSorted = [3, 200, 2, 68, 15, 44, 23, 89, 3];
+//MergeSort sort = new MergeSort();
+//sort.MergeSortRecursive(unsortSorted, 0, unsortSorted.Length-1);
+//Print.WriteList(unsortSorted);
+#endregion
+#region Quick Sort
 int[] unsortSorted = [3, 200, 2, 68, 15, 44, 23, 89, 3];
-MergeSort sort = new MergeSort();
-sort.MergeSortRecursive(unsortSorted, 0, unsortSorted.Length-1);
+QuickSortDesignPattern sort = new QuickSortDesignPattern();
+sort.QuickSort(unsortSorted, 0, unsortSorted.Length-1);
 Print.WriteList(unsortSorted);
 #endregion
 #endregion
